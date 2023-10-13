@@ -1,3 +1,3 @@
-                                                            ####### CRYPTOGRAPHY ########
+                                        ####### CRYPTOGRAPHY ########
 
 In This Repo, I'll Be Uploading All Programs And Algorithms Related To CryptoGraphy...

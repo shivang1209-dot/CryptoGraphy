@@ -25,7 +25,7 @@ def main():
 
     ciphertext = DES3_CBC_encrypt(plaintext, DES3_key, initialization_vector)
 
-    decrypted_plaintext = DES_CBC_decrypt(ciphertext, DES3_key, initialization_vector)
+    decrypted_plaintext = DES3_CBC_decrypt(ciphertext, DES3_key, initialization_vector)
 
     print("Plaintext: ", plaintext.decode())
     print("Ciphertext:", ciphertext.hex())

@@ -8,7 +8,7 @@ def DES_CTR_encrypt(plaintext, DES_key, nonce):
     return ciphertext
 
 def DES_CTR_decrypt(ciphertext, DES_key, nonce):
-    DES_CTR_cipher = DES.neww(DES_key, DES.MODE_CTR, nonce=nonce)
+    DES_CTR_cipher = DES.new(DES_key, DES.MODE_CTR, nonce=nonce)
     decrypted_plaintext = DES_CTR_cipher.decrypt(ciphertext)
 
     return decrypted_plaintext

@@ -21,7 +21,7 @@ def main():
 
     nonce = get_random_bytes(16)
 
-    ciphertext = AES_GCM_encrypt(ciphertext, AES_key, nonce)
+    ciphertext = AES_GCM_encrypt(plaintext, AES_key, nonce)
 
     decrypted_plaintext = AES_GCM_decrypt(ciphertext, AES_key, nonce)
 

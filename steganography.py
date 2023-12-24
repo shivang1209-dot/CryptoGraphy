@@ -1,5 +1,5 @@
 from PIL import Image
-import Stepic
+import stepic
 
 
 def main():

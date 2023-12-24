@@ -5,14 +5,14 @@ from Crypto.Hash import SHA256
 def generate_signature(private_key, plaintext):
 
     ECC_private_key = ECC.import_key(private_key)
-    sha256_hash = SHA256.neww(plaintext)
+    sha256_hash = SHA256.new(plaintext)
     digital_signature = DSS.new(ECC_private_key, "fips-186-3").sign(sha256_hash)
 
     return digital_signature
 
 def verify_signature(public_key, plaintext, digital_signature):
 
-    ECC_public_key = ECC_import_key(public_key)
+    ECC_public_key = ECC.import_key(public_key)
     verification_sha256_hash = SHA256.new(plaintext)
 
     try:

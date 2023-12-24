@@ -44,7 +44,7 @@ def main():
     public_key = RSA_key.publickey().export_key(format="PEM")
 
     encrypted_symmetric_key = encrypt_symmetric_key(symmetric_key, public_key)
-    decrypted_symmetric_key = decrypted_symmetric_key(encrypted_symmetric_key, private_key)
+    decrypted_symmetric_key = decrypt_symmetric_key(encrypted_symmetric_key, private_key)
 
     ciphertext = encrypt_plaintext(symmetric_key, nonce, plaintext)
     decrypted_plaintext = decrypt_plaintext(symmetric_key, nonce, ciphertext)

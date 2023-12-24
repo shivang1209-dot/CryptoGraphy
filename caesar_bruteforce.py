@@ -15,9 +15,19 @@ def caesar_bruteforce(ciphertext):
                 char_decrypted = chr(char_unshifted)
 
                 decrypted_plaintext += char_decrypted
+            
+            elif char.isupper():
 
+                char_index = ord(char) - ord("A")
+
+                char_unshifted = (char_index + shift_key) % 26 + ord("A")
+        
+                char_decrypted = chr(char_unshifted)
+
+                decrypted_plaintext += char_decrypted
+            
             else:
-
+            
                 decrypted_plaintext += char
 
         print("Shift : " + str(shift_key) + ", Decrypted Text : " + decrypted_plaintext)

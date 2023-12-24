@@ -72,7 +72,7 @@ def main():
 
     decrypted_text = decrypt(encrypted_text, shift_key)
 
-    print(f"Encrypted Text : {encrypted_text}, \nDecrypted Text : {decrypted_text}")
+    print(f"Encrypted Text : {encrypted_text} \nDecrypted Text : {decrypted_text}")
 
 
 if __name__ == "__main__":
